@@ -1,0 +1,74 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{miniclass}[2025/07/03 Mini LaTeX class]
+
+\newcommand{\headlinecolor}{\normalcolor}
+\RequirePackage{xcolor}
+\RequirePackage{graphicx}
+\definecolor{slcolor}{HTML}{882B21}
+
+\DeclareOption{green}{\renewcommand{\headlinecolor}{\color{green}}}
+\DeclareOption{red}{\renewcommand{\headlinecolor}{\color{slcolor}}}
+\DeclareOption{blue}{\renewcommand{\headlinecolor}{\color{blue}}}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
+\ProcessOptions\relax
+\LoadClass{article}
+
+
+\renewcommand{\maketitle}{%
+    \begin{flushleft}%
+    \let \footnote \thanks
+        {\huge \textbf{\@title}\par}
+    \vskip 1.5\baselineskip
+    \@author
+    \par
+    \end{flushleft}%
+    \par
+}
+
+
+\renewcommand{\normalsize}{\fontsize{9}{10}\selectfont}
+\setcounter{secnumdepth}{0}
+
+
+\usepackage{authblk}
+\usepackage{geometry}
+\geometry{ a4paper, total={170mm,257mm}, left=20mm, top=20mm, }
+
+
+\usepackage[center]{titlesec}
+
+\renewcommand{\thesection}{\alph{section}}
+\renewcommand{\thesubsection}{\alph{subsection}}
+\renewcommand{\thesubsubsection}{\alph{subsubsection}}
+
+% \titleformat{<command>}[<shape>]{<format>}{<label>}{<sep>}{<before-code>}[<after-code>]
+% https://www.texready.ir/docs/document_structure/document_sectioning
+\titleformat%
+    {\section}
+    [block]
+    {\LARGE\bfseries}
+    {\thesection.}
+    {0.5em}
+    {}
+
+\titleformat%
+    {\subsection}
+    [block]
+    {\Large\itshape}
+    {\thesubsection.}
+    {0.5em}
+    {}
+
+\titleformat%
+    {\subsubsection}
+    [block]
+    {\large\normalfont}
+    {\thesubsubsection.)}
+    {0.5em}
+    {}
+
+\titlespacing{\section}{0pt}{*4}{*1.5}
+\titlespacing{\subsection}{0pt}{*4}{*1.5}
+\titlespacing{\subsubsection}{0pt}{*4}{*1.5}
+
+
