@@ -34,7 +34,7 @@
 }
 
 \postauthor{
-	\vspace{10pt}
+	\vspace{0pt}
 }
 
 
