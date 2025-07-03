@@ -11,8 +11,8 @@ make
 
 ## Screenshots
 
-![Screenshot 1](https://github.com/patryk-jarnot/main/blob/main/screenshots/mini_template_1.png?raw=true)
-![Screenshot 2](https://github.com/patryk-jarnot/main/blob/main/screenshots/mini_template_2.png?raw=true)
+![Screenshot 1](https://raw.githubusercontent.com/patryk-jarnot/Mini-LaTeX-article-template/refs/heads/main/screenshots/mini_template_1.png)
+![Screenshot 2](https://raw.githubusercontent.com/patryk-jarnot/Mini-LaTeX-article-template/refs/heads/main/screenshots/mini_template_1.png)
 
 ## Links
 * [Patryk Jarnot Web Page](https://www.pjarnot.com)
