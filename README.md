@@ -1,5 +1,5 @@
 # Minimalistic LaTeX article template
-This is a basic ${tex`t`} template that you can use without any limitations.
+This is a basic LaTeX template that you can use without any limitations.
 I use it for my projects as a starting template for articles, supplementaries and other documents.
 Further you can replace it to a template provided by a journal or, in the case of a supplementary material, submit it as it is.
 
