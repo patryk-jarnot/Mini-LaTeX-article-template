@@ -46,7 +46,7 @@
 \usepackage{authblk}
 \usepackage{geometry}
 \geometry{ a4paper, total={174mm,257mm}, left=18mm, top=20mm, }
-\setlength{\columnsep}{7mm}
+\setlength{\columnsep}{6mm}
 
 
 \usepackage[center]{titlesec}
@@ -90,4 +90,10 @@
 \titlespacing{\subsubsection}{0pt}{*4}{*1.5}
 
 
+
+\if@twocolumn%
+    \usepackage[switch]{lineno}
+\else%
+    \usepackage{lineno}
+\fi
 
