@@ -45,7 +45,8 @@
 
 \usepackage{authblk}
 \usepackage{geometry}
-\geometry{ a4paper, total={170mm,257mm}, left=20mm, top=20mm, }
+\geometry{ a4paper, total={174mm,257mm}, left=18mm, top=20mm, }
+\setlength{\columnsep}{7mm}
 
 
 \usepackage[center]{titlesec}
