@@ -14,16 +14,29 @@
 \LoadClass{article}
 
 
-\renewcommand{\maketitle}{%
-    \begin{flushleft}%
-    \let \footnote \thanks
-        {\huge \textbf{\@title}\par}
-    \vskip 1.5\baselineskip
-    \@author
-    \par
-    \end{flushleft}%
-    \par
+\usepackage{titling}
+
+\pretitle{
+	\vspace{-30pt}
+	\Huge\bfseries
+    \if@twocolumn%
+    \else%
+    \hspace{-24.5pt}
+    \fi
 }
+\posttitle{\par\vskip 15pt}
+
+\preauthor{
+    \if@twocolumn%
+    \else%
+    \hspace{-17.5pt}
+    \fi
+}
+
+\postauthor{
+	\vspace{10pt}
+}
+
 
 
 \renewcommand{\normalsize}{\fontsize{9}{10}\selectfont}
