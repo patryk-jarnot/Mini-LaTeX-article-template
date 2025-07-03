@@ -54,12 +54,16 @@
 \renewcommand{\thesubsection}{\alph{subsection}}
 \renewcommand{\thesubsubsection}{\alph{subsubsection}}
 
+
+
+\usepackage{soulutf8}
+
 % \titleformat{<command>}[<shape>]{<format>}{<label>}{<sep>}{<before-code>}[<after-code>]
 % https://www.texready.ir/docs/document_structure/document_sectioning
 \titleformat%
     {\section}
     [block]
-    {\LARGE\bfseries}
+    {\Large\bfseries}
     {\thesection.}
     {0.5em}
     {}
@@ -67,7 +71,7 @@
 \titleformat%
     {\subsection}
     [block]
-    {\Large\itshape}
+    {\large\itshape}
     {\thesubsection.}
     {0.5em}
     {}
@@ -75,10 +79,10 @@
 \titleformat%
     {\subsubsection}
     [block]
-    {\large\normalfont}
+    {\normalsize\normalfont}
     {\thesubsubsection.)}
     {0.5em}
-    {}
+    {\ul}
 
 \titlespacing{\section}{0pt}{*4}{*1.5}
 \titlespacing{\subsection}{0pt}{*4}{*1.5}
