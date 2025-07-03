@@ -90,10 +90,3 @@
 \titlespacing{\subsubsection}{0pt}{*4}{*1.5}
 
 
-
-\if@twocolumn%
-    \usepackage[switch]{lineno}
-\else%
-    \usepackage{lineno}
-\fi
-
