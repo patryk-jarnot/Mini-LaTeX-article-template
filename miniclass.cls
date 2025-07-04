@@ -57,7 +57,7 @@
 
 
 
-\usepackage{soulutf8}
+\usepackage{soul}
 
 % \titleformat{<command>}[<shape>]{<format>}{<label>}{<sep>}{<before-code>}[<after-code>]
 % https://www.texready.ir/docs/document_structure/document_sectioning
