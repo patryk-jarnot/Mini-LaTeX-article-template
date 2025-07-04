@@ -45,8 +45,15 @@
 
 \usepackage{authblk}
 \usepackage{geometry}
-\geometry{ a4paper, total={174mm,257mm}, left=18mm, top=20mm, }
-\setlength{\columnsep}{6mm}
+
+
+% A4 format: 210mm x 297mm
+\if@twocolumn%
+    \geometry{ a4paper, total={174mm,257mm}, left=18mm, top=20mm, }
+    \setlength{\columnsep}{6mm}
+\else%
+    \geometry{ a4paper, total={159mm,246mm}, left=25.5mm, top=25.5mm, }
+\fi
 
 
 \usepackage[center]{titlesec}
