@@ -16,7 +16,6 @@ make
 
 ### One column page
 ![Screenshot 2](https://raw.githubusercontent.com/patryk-jarnot/Mini-LaTeX-article-template/refs/heads/main/screenshots/mini_template_onecolumn-0.png)
-                                                                                                                        mini_template_twocolumn-0.png
 
 ## Links
 * [Patryk Jarnot Web Page](https://www.pjarnot.com)
