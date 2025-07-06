@@ -24,7 +24,9 @@
     \hspace{-24.5pt}
     \fi
 }
-\posttitle{\par\vskip 15pt}
+\posttitle{
+    \par\vskip 15pt
+}
 
 \preauthor{
     \if@twocolumn%
@@ -34,8 +36,14 @@
 }
 
 \postauthor{
-	\vspace{0pt}
+    \if@twocolumn%
+        \vspace{-15pt}
+    \else%
+        \vspace{-25pt}
+    \fi
 }
+
+
 
 
 
