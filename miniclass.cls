@@ -1,6 +1,9 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{miniclass}[2025/07/03 Mini LaTeX class]
 
+
+
+
 \newcommand{\headlinecolor}{\normalcolor}
 \RequirePackage{xcolor}
 \RequirePackage{graphicx}
@@ -10,8 +13,15 @@
 \DeclareOption{red}{\renewcommand{\headlinecolor}{\color{slcolor}}}
 \DeclareOption{blue}{\renewcommand{\headlinecolor}{\color{blue}}}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
+
+\newif\if@onecolumnmargin
+\@onecolumnmarginfalse
+\DeclareOption{onecolumnmargin}{\@onecolumnmargintrue}
+
 \ProcessOptions\relax
 \LoadClass{article}
+
+
 
 
 \usepackage{titling}
@@ -60,7 +70,11 @@
     \geometry{ a4paper, total={174mm,257mm}, left=18mm, top=20mm, }
     \setlength{\columnsep}{6mm}
 \else%
+\if@onecolumnmargin%
+    \geometry{ a4paper, total={129mm,246mm}, left=12mm, top=25.5mm, }
+\else%
     \geometry{ a4paper, total={159mm,246mm}, left=25.5mm, top=25.5mm, }
+\fi
 \fi
 
 

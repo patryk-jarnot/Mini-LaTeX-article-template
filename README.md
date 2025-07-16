@@ -9,6 +9,15 @@ The project has a Makefile, so you can simply type the command below to build pd
 make
 ```
 
+## Options
+
+Available options are:
+* twocolumn
+* onecolumn
+* onecolumnmargin
+
+The last option can be used use to apply corrections.
+
 ## Screenshots
 
 ### Two column page
