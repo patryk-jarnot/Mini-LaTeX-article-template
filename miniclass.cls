@@ -93,7 +93,7 @@
 \titleformat%
     {\section}
     [block]
-    {\Large\bfseries}
+    {\large\bfseries}
     {\thesection.}
     {0.5em}
     {}
