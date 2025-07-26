@@ -28,7 +28,7 @@
 
 \pretitle{
 	\vspace{-30pt}
-	\Huge\bfseries
+	\Large
     \if@twocolumn%
     \else%
     \hspace{-24.5pt}
