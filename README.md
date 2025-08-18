@@ -27,6 +27,6 @@ The last option can be used use to apply corrections.
 ![Screenshot 2](https://raw.githubusercontent.com/patryk-jarnot/Mini-LaTeX-article-template/refs/heads/main/screenshots/mini_template_onecolumn-0.png)
 
 ## Links
-* [Patryk Jarnot Web Page](https://www.pjarnot.com)
+* [Patryk Jarnot Web Page](https://pjarnot.com)
 
 
