@@ -26,15 +26,30 @@
 
 \usepackage{titling}
 
+%\pretitle{
+%	\vspace{-30pt}
+%	\Large
+%    \if@twocolumn%
+%    \else%
+%    \hspace{-24.5pt}
+%    \fi
+%}
+%\posttitle{
+%    \par\vskip 15pt
+%}
 \pretitle{
-	\vspace{-30pt}
-	\Large
-    \if@twocolumn%
-    \else%
-    \hspace{-24.5pt}
+    \vspace{-30pt}
+    \noindent
+    \Large
+    \if@twocolumn
+        \begin{minipage}{\textwidth}
+    \else
+        \begin{minipage}{\dimexpr\textwidth\relax}
     \fi
+    \raggedright % Ensures strict left alignment inside the box
 }
 \posttitle{
+    \end{minipage}
     \par\vskip 15pt
 }
 
